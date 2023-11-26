@@ -60,3 +60,51 @@ def update_menu(request):
         'title': 'UPDATE [MENU NAME] MENU',
     }
     return render(request, 'updateMenu.html', context)
+def login(request):
+    context = {
+        'title': 'SIMIBIDAY - GROUP CODE',
+    }
+    return render(request, 'login.html', context)
+
+def login_form(request):
+    context = {
+        'title': 'LOGIN FORM',
+    }
+    return render(request, 'loginForm.html', context)
+
+def register(request):
+    context = {
+        'title': 'REGISTER',
+    }
+    return render(request, 'register.html', context)
+
+def child_register(request):
+    context = {
+        'title': 'CHILD REGISTRATION FORM',
+    }
+    return render(request, 'childRegist.html', context)
+
+def admin_register(request):
+    context = {
+        'title': 'ADMIN REGISTRATION FORM',
+    }
+    return render(request, 'adminRegist.html', context)
+
+
+def caregiver_register(request):
+    context = {
+        'title': 'CAREGIVER REGISTRATION FORM',
+    }
+    return render(request, 'caregiverRegist.html', context)
+
+def driver_register(request):
+    context = {
+        'title': 'DRIVER REGISTRATION FORM',
+    }
+    return render(request, 'driverRegist.html', context)
+
+def user_dashboard(request):
+    context = {
+        'title': 'User Dashboard: [User’s Full Name]',
+    }
+    return render(request, 'userDashboard.html', context)
