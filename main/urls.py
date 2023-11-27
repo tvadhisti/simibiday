@@ -1,5 +1,5 @@
 from django.urls import path
-from main.views import crud_menu, room, sclass, child_in_class, daily_report, daily_report_form, admin_dashboard, room_form, menu_form, update_menu, login, login_form, register, child_register,admin_register, caregiver_register, driver_register, user_dashboard
+from main.views import crud_menu, room, sclass, child_in_class, daily_report, daily_report_form, admin_dashboard, room_form, menu_form, update_menu, login, login_form, register, child_register,admin_register, caregiver_register, driver_register, user_dashboard, child_list, admin_offered_program
 
 app_name = 'main'
 
@@ -20,6 +20,8 @@ urlpatterns = [
     path('child-register', child_register, name='child_register'),
     path('admin-register', admin_register, name='admin_register'),
     path('caregiver-register', caregiver_register, name='caregiver_register'),
-     path('driver-register', driver_register, name='driver_register'),
-     path('user-dashboard', user_dashboard, name='user_dashboard'),
+    path('driver-register', driver_register, name='driver_register'),
+    path('user-dashboard', user_dashboard, name='user_dashboard'),
+    path('child-list', child_list, name='child_list'),
+    path('admin-offered-program', admin_offered_program, name='admin_offered_program'),
 ]

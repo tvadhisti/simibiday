@@ -108,3 +108,15 @@ def user_dashboard(request):
         'title': 'User Dashboard: [User’s Full Name]',
     }
     return render(request, 'userDashboard.html', context)
+
+def child_list(request):
+    context = {
+        'title' : 'Child List',
+    }
+    return render(request, 'childList.html', context)
+
+def admin_offered_program(request):
+    context = {
+        'title' : 'Admin Offered Program',
+    }
+    return render(request, 'adminOfferedProgram.html', context)
