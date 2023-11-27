@@ -41,18 +41,25 @@
     <h1 class="title">{{ title }}</h1>
     <hr>
 
-    <a href="edit-activity" class="btn btn-outline-dark" role="button">Add New Activity</a>
+    <label for="myActivities">My Extracurricular: </label>
+    
 
     <table>
         <thead>
             <tr>
-                <th>Activity Name</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Day</th>
+                <th>Hour</th>
                 <th>Operation</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Sample Activity 1</td>
+                <td>Sample Name 1</td>
+                <td>Sample Type 1</td>
+                <td>Sample Day 1</td>
+                <td>Sample Hour 1</td>
                 <td>
                     <div class="operation-buttons">
                         <a href="update-menu" class="btn btn-primary" role="button">EDIT</a>
@@ -61,7 +68,22 @@
                 </td>
             </tr>
             <tr>
-                <td>Sample Activity 2</td>
+                <td>Sample Name 2</td>
+                <td>Sample Type 2</td>
+                <td>Sample Day 2</td>
+                <td>Sample Hour 2</td>
+                <td>
+                    <div class="operation-buttons">
+                        <a href="update-menu" class="btn btn-primary" role="button">EDIT</a>
+                        <button type="button" class="btn btn-danger">DELETE</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Sample Name 3</td>
+                <td>Sample Type 3</td>
+                <td>Sample Day 3</td>
+                <td>Sample Hour 3</td>
                 <td>
                     <div class="operation-buttons">
                         <a href="update-menu" class="btn btn-primary" role="button">EDIT</a>
@@ -75,9 +97,29 @@
     <div style="text-align: center;">
         <br>
         <div style="text-align: center;">
-            <a href="user-dashboard" class="btn btn-dark" role="button">BACK</a>
+            <a href="admin-dashboard" class="btn btn-dark" role="button">BACK</a>
         </div>
     </div>
+    <br>
+
+    <select id="availableActivities" class="form-select" aria-label="Select available activity">
+        <!-- Options will be populated dynamically -->
+        <option value="activity1">Activity 1 - Monday - 3 PM</option>
+        <option value="activity2">Activity 2 - Wednesday - 5 PM</option>
+        <!-- Add more options as needed -->
+    </select>
+    <br>
+    <button type="button" class="btn btn-primary" onclick="addActivity()">Add</button>
+
+    <script>
+        function addActivity() {
+            // Retrieve the selected value from the dropdown
+            const selectedActivity = document.getElementById('availableActivities').value;
+            
+            // Log the selected value (you can perform other actions here)
+            console.log('Selected Activity:', selectedActivity);
+        }
+    </script>
 </body>
 
 </html>

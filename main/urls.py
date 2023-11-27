@@ -1,6 +1,6 @@
 from django.urls import path
 from main.views import crud_menu, room, sclass, child_in_class, daily_report, daily_report_form, admin_dashboard, room_form, menu_form, update_menu, login, login_form, register, child_register,admin_register, caregiver_register, driver_register, user_dashboard, admin_activity,child_program, crd_program, driver_pickup,edit_activity
-from main.views import crud_menu, room, sclass, child_in_class, daily_report, daily_report_form, admin_dashboard, room_form, menu_form, update_menu, login, login_form, register, child_register,admin_register, caregiver_register, driver_register, user_dashboard, child_list, admin_offered_program
+from main.views import crud_menu, room, sclass, child_in_class, daily_report, daily_report_form, admin_dashboard, room_form, menu_form, update_menu, login, login_form, register, child_register,admin_register, caregiver_register, driver_register, user_dashboard, child_list, admin_offered_program, manage_ext, update_activity
 
 app_name = 'main'
 
@@ -31,4 +31,7 @@ urlpatterns = [
 
     path('child-list', child_list, name='child_list'),
     path('admin-offered-program', admin_offered_program, name='admin_offered_program'),
+    path('manage-ext', manage_ext, name='manage_ext'),
+    path('update-act', update_activity, name='update_activity'),
+
 ]

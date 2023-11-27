@@ -150,3 +150,15 @@ def admin_offered_program(request):
         'title' : 'Admin Offered Program',
     }
     return render(request, 'adminOfferedProgram.html', context)
+
+def manage_ext(request):
+    context = {
+        'title' : 'Manage Extracuricular',
+    }
+    return render(request, 'manageExt.html', context)
+
+def update_activity(request):
+    context = {
+        'title' : 'Update [Activity Name] Activity',
+    }
+    return render(request, 'updateActivity.html', context)
