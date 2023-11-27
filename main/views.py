@@ -139,3 +139,14 @@ def edit_activity(request):
     }
     return render(request, 'editActivity.html', context)
 
+def child_list(request):
+    context = {
+        'title' : 'Child List',
+    }
+    return render(request, 'childList.html', context)
+
+def admin_offered_program(request):
+    context = {
+        'title' : 'Admin Offered Program',
+    }
+    return render(request, 'adminOfferedProgram.html', context)
