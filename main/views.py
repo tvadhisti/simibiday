@@ -109,6 +109,36 @@ def user_dashboard(request):
     }
     return render(request, 'userDashboard.html', context)
 
+def child_program(request):
+    context = {
+        'title': 'CHILD PROGRAM DATA',
+    }
+    return render(request, 'childProgramExt.html', context)
+
+def admin_activity(request):
+    context = {
+        'title': 'ACTIVITY',
+    }
+    return render(request, 'adminActivity.html', context)
+
+def crd_program(request):
+    context = {
+        'title': 'MANAGE EXTRACURRICULAR',
+    }
+    return render(request, 'crdProgramExt.html', context)
+
+def driver_pickup(request):
+    context = {
+        'title': 'PICKUP SCHEDULE',
+    }
+    return render(request, 'driverPickupSchedule.html', context)
+
+def edit_activity(request):
+    context = {
+        'title': 'ACTIVITY FORM',
+    }
+    return render(request, 'editActivity.html', context)
+
 def child_list(request):
     context = {
         'title' : 'Child List',
