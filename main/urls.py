@@ -1,12 +1,6 @@
 from django.urls import path
-from main.views import crud_menu, room, sclass, child_in_class, daily_report, daily_report_form, admin_dashboard, room_form, menu_form, update_menu, login, login_form, register, child_register,admin_register, caregiver_register, driver_register, user_dashboard, admin_activity,child_program, crd_program, driver_pickup,edit_activity
-<<<<<<< HEAD
-from main.views import crud_menu, room, sclass, child_in_class, daily_report, daily_report_form, admin_dashboard, room_form, menu_form, update_menu, login, login_form, register, child_register,admin_register, caregiver_register, driver_register, user_dashboard, child_list, admin_offered_program, manage_ext, update_activity
+from main.views import crud_menu, room, sclass, child_in_class, daily_report, daily_report_form, admin_dashboard, room_form, menu_form, update_menu, login, login_form, register, child_register,admin_register, caregiver_register, driver_register, user_dashboard, admin_activity,child_program, crd_program, driver_pickup,edit_activity, child_list, admin_offered_program, manage_ext, update_activity, payment_history_admin, payment_history_child, payment_form,crud_extracurricular, extracurricular_detail, extracurricular_form, update_extracurricular
 
-=======
-from main.views import crud_menu, room, sclass, child_in_class, daily_report, daily_report_form, admin_dashboard, room_form, menu_form, update_menu, login, login_form, register, child_register,admin_register, caregiver_register, driver_register, user_dashboard, child_list, admin_offered_program, payment_history_admin, payment_history_child, payment_form, crud_extracurricular
-from main.views import extracurricular_detail, extracurricular_form, update_extracurricular
->>>>>>> 3e3e4fe86766d3fe6bc8545a5fa13056bcd8fad1
 app_name = 'main'
 
 urlpatterns = [
@@ -33,15 +27,10 @@ urlpatterns = [
     path('crd-program', crd_program, name='crd_program'),
     path('driver-pickup', driver_pickup, name='driver_pickup'),
     path('edit-activity', edit_activity, name='edit_activity'),
-
     path('child-list', child_list, name='child_list'),
     path('admin-offered-program', admin_offered_program, name='admin_offered_program'),
-<<<<<<< HEAD
     path('manage-ext', manage_ext, name='manage_ext'),
     path('update-act', update_activity, name='update_activity'),
-
-=======
-    path('admin-offered-program', admin_offered_program, name='admin_offered_program'),
     path('payment-history-admin', payment_history_admin, name='payment_history_admin'),
     path('payment-history-child', payment_history_child, name='payment_history_child'),
     path('payment-form', payment_form, name='payment_form'),
@@ -49,5 +38,4 @@ urlpatterns = [
     path('extracurricular-detail', extracurricular_detail, name='extracurricular_detail'),
     path('extracurricular-form', extracurricular_form, name='extracurricular_form'),
     path('update-extracurricular', update_extracurricular, name='update_extracurricular')
->>>>>>> 3e3e4fe86766d3fe6bc8545a5fa13056bcd8fad1
 ]
