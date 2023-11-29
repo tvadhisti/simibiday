@@ -39,35 +39,15 @@
     <h1 class="title">{{ title }}</h1>
     <hr>
 
-    <div class="mb-2 row">
-        <label for="inputPassword" class="col-sm-2 col-form-label">Class Name :</label>
-        <div class="col-sm-4">
-            <input type="text" class="form-control">
-        </div>
-    </div>
-
-    <div class="mb-2 row">
-        <label for="inputPassword" class="col-sm-2 col-form-label">Year :</label>
-        <div class="col-sm-4">
-            <input type="text" class="form-control">
-        </div>
-    </div>
-    <div class="mb-2 row">
-        <label for="inputPassword" class="col-sm-2 col-form-label">Total Children in Class :</label>
-        <div class="col-sm-4">
-            <input type="text" class="form-control">
-        </div>
-    </div>
-
+    <a href="extracurricular-form" class="btn btn-outline-dark" role="button">Add New Extracurricular</a>
 
     <table>
         <thead>
             <tr>
                 <th>Name</th>
-                <th>Age</th>
-                <th>Birthday</th>
-                <th>Enrollment Type</th>
-                <th>Daily Report</th>
+                <th>Day</th>
+                <th>Hour</th>
+                <th>Operation</th>
             </tr>
         </thead>
         <tbody>
@@ -75,29 +55,46 @@
                 <td>...</td>
                 <td>...</td>
                 <td>...</td>
-                <td>...</td>
-                <td><a href="/daily-report" class="btn btn-warning" role="button">View Daily Report</a></td>
+                <td>
+                    <div>
+                        <a href="update-extracurricular" class="btn btn-primary" role="button">Edit</a>
+                        <a href="extracurricular-detail" class="btn btn-primary" role="button">Detail</a>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </td>
             </tr>
             <tr>
                 <td>...</td>
                 <td>...</td>
                 <td>...</td>
-                <td>...</td>
-                <td><a href="/daily-report" class="btn btn-warning" role="button">View Daily Report</a></td>
+                <td>
+                    <div>
+                        <a href="update-extracurricular" class="btn btn-primary" role="button">Edit</a>
+                        <a href="extracurricular-detail" class="btn btn-primary" role="button">Detail</a>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </td>
             </tr>
             <tr>
                 <td>...</td>
                 <td>...</td>
                 <td>...</td>
-                <td>...</td>
-                <td><a href="/daily-report" class="btn btn-warning" role="button">View Daily Report</a></td>
+                <td>
+                    <div>
+                        <a href="update-extracurricular" class="btn btn-primary" role="button">Edit</a>
+                        <a href="extracurricular-detail" class="btn btn-primary" role="button">Detail</a>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </td>
             </tr>
         </tbody>
     </table>
-
     <br>
     <div style="text-align: center;">
-        <a href="/class" class="btn btn-dark" role="button">BACK</a>
+        <br>
+        <div style="text-align: center;">
+            <a href="user-dashboard" class="btn btn-dark" role="button">BACK</a>
+        </div>
     </div>
 </body>
 

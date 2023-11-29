@@ -151,6 +151,7 @@ def admin_offered_program(request):
     }
     return render(request, 'adminOfferedProgram.html', context)
 
+<<<<<<< HEAD
 def manage_ext(request):
     context = {
         'title' : 'Manage Extracuricular',
@@ -162,3 +163,46 @@ def update_activity(request):
         'title' : 'Update [Activity Name] Activity',
     }
     return render(request, 'updateActivity.html', context)
+=======
+def payment_history_admin(request):
+    context = {
+        'title' : 'Payment History',
+    }
+    return render(request, 'paymentHistoryAdmin.html', context)
+
+def payment_history_child(request):
+    context = {
+        'title' : 'Payment History',
+    }
+    return render(request, 'paymentHistoryChild.html', context)
+
+def payment_form(request):
+    context = {
+        'title' : 'Payment Form',
+    }
+    return render(request, 'paymentForm.html', context)
+
+def crud_extracurricular(request):
+    context = {
+        'title' : 'Extracurricular',
+    }
+    return render(request, 'crudExtracurricular.html', context)
+
+def extracurricular_detail(request):
+    context = {
+        'title' : 'Extracurricular Detail',
+    }
+    return render(request, 'extracurricularDetail.html', context)
+
+def extracurricular_form(request):
+    context = {
+        'title' : 'Extracurricular Form',
+    }
+    return render(request, 'extracurricularForm.html', context)
+
+def update_extracurricular(request):
+    context = {
+        'title' : 'Update Extracurricular',
+    }
+    return render(request, 'updateExtracurricular.html', context)
+>>>>>>> 3e3e4fe86766d3fe6bc8545a5fa13056bcd8fad1
