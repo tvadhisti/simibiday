@@ -1,5 +1,6 @@
 from django.urls import path
-from main.views import crud_menu, room, sclass, child_in_class, daily_report, daily_report_form, admin_dashboard, room_form, menu_form, update_menu, login, login_form, register, child_register,admin_register, caregiver_register, driver_register, user_dashboard, admin_activity,child_program, crd_program, driver_pickup,edit_activity, child_list, admin_offered_program, manage_ext, update_activity, payment_history_admin, payment_history_child, payment_form,crud_extracurricular, extracurricular_detail, extracurricular_form, update_extracurricular
+from main.views import crud_menu, room, sclass, child_in_class, daily_report, daily_report_form, admin_dashboard, room_form, menu_form, update_menu, login, login_form, register, child_register,admin_register, caregiver_register, driver_register, user_dashboard, admin_activity,child_program, crd_program, driver_pickup,edit_activity
+from main.views import crud_menu, room, sclass, child_in_class, daily_report, daily_report_form, admin_dashboard, room_form, menu_form, update_menu, login, login_form, register, child_register,admin_register, caregiver_register, driver_register, user_dashboard, child_list, admin_offered_program,manage_ext, update_activity, payment_history_admin, payment_history_child, payment_form,crud_extracurricular, extracurricular_detail, extracurricular_form, update_extracurricular, admin_create_offered_program, offered_program_details, add_new_activity, add_new_menu, child_daily_report
 
 app_name = 'main'
 
@@ -37,5 +38,10 @@ urlpatterns = [
     path('crud-extracurricular', crud_extracurricular, name='crud_extracurricular'),
     path('extracurricular-detail', extracurricular_detail, name='extracurricular_detail'),
     path('extracurricular-form', extracurricular_form, name='extracurricular_form'),
-    path('update-extracurricular', update_extracurricular, name='update_extracurricular')
+    path('update-extracurricular', update_extracurricular, name='update_extracurricular'),
+    path('admin-create-offered-program', admin_create_offered_program, name='admin_create_offered_program'),
+    path('offered-program-details', offered_program_details, name='offered_program_details'),
+    path('add-new-activity', add_new_activity, name='add_new_activity'),
+    path('add-new-menu', add_new_menu, name='add_new_menu'),
+    path('child-daily-report', child_daily_report, name='child_daily_report')
 ]
