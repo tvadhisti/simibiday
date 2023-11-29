@@ -203,3 +203,33 @@ def update_extracurricular(request):
         'title' : 'Update Extracurricular',
     }
     return render(request, 'updateExtracurricular.html', context)
+
+def admin_create_offered_program(request):
+    context = {
+        'title' : 'Admin Create Offered Program',
+    }
+    return render(request, 'adminCreateOfferedProgram.html', context)
+
+def offered_program_details(request):
+    context = {
+        'title' : "[Offered Program's Year] [Offered Program]'s Details",
+    }
+    return render(request, 'offeredProgramDetails.html', context)
+
+def add_new_activity(request):
+    context = {
+        'title' : "Add New Activity",
+    }
+    return render(request, 'addNewActivity.html', context)
+
+def add_new_menu(request):
+    context = {
+        'title' : "Add New Menu",
+    }
+    return render(request, 'addNewMenu.html', context)
+
+def child_daily_report(request):
+    context = {
+        'title' : "Child Daily Report",
+    }
+    return render(request, 'childDailyReport.html', context)
