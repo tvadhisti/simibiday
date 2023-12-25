@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.db import connection
 
 
 def crud_menu(request):

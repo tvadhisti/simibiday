@@ -75,10 +75,14 @@ WSGI_APPLICATION = 'simibiday.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+   'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': "railway",
+        'USER': "postgres",
+        'PASSWORD': "5b4cDAAa5g5DF11Cg63Ac*4*b3Dcb4bA",
+        'HOST': "monorail.proxy.rlwy.net",
+        'PORT': 27131,
+   }
 }
 
 
