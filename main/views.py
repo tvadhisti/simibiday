@@ -3,7 +3,6 @@ from .models import MENU, ROOM, PROGRAM, EXTRACURRICULAR, CHILD
 from django.http import JsonResponse
 from django.views.decorators.http import require_POST
 
-
 def child_list(request):
     context = {
         'title' : 'Child List',
@@ -250,6 +249,30 @@ def edit_activity(request):
     }
     return render(request, 'editActivity.html', context)
 
+=======
+def child_list(request):
+    context = {
+        'title' : 'Child List',
+    }
+    return render(request, 'childList.html', context)
+
+def admin_offered_program(request):
+    context = {
+        'title' : 'Admin Offered Program',
+    }
+    return render(request, 'adminOfferedProgram.html', context)
+
+def manage_ext(request):
+    context = {
+        'title' : 'Manage Extracuricular',
+    }
+    return render(request, 'manageExt.html', context)
+
+def update_activity(request):
+    context = {
+        'title' : 'Update [Activity Name] Activity',
+    }
+
 def payment_history_admin(request):
     context = {
         'title' : 'Payment History',
@@ -267,3 +290,59 @@ def payment_form(request):
         'title' : 'Payment Form',
     }
     return render(request, 'paymentForm.html', context)
+=======
+
+def crud_extracurricular(request):
+    context = {
+        'title' : 'Extracurricular',
+    }
+    return render(request, 'crudExtracurricular.html', context)
+
+def extracurricular_detail(request):
+    context = {
+        'title' : 'Extracurricular Detail',
+    }
+    return render(request, 'extracurricularDetail.html', context)
+
+def extracurricular_form(request):
+    context = {
+        'title' : 'Extracurricular Form',
+    }
+    return render(request, 'extracurricularForm.html', context)
+
+def update_extracurricular(request):
+    context = {
+        'title' : 'Update Extracurricular',
+    }
+    return render(request, 'updateExtracurricular.html', context)
+
+def admin_create_offered_program(request):
+    context = {
+        'title' : 'Admin Create Offered Program',
+    }
+    return render(request, 'adminCreateOfferedProgram.html', context)
+
+def offered_program_details(request):
+    context = {
+        'title' : "[Offered Program's Year] [Offered Program]'s Details",
+    }
+    return render(request, 'offeredProgramDetails.html', context)
+
+def add_new_activity(request):
+    context = {
+        'title' : "Add New Activity",
+    }
+    return render(request, 'addNewActivity.html', context)
+
+def add_new_menu(request):
+    context = {
+        'title' : "Add New Menu",
+    }
+    return render(request, 'addNewMenu.html', context)
+
+def child_daily_report(request):
+    context = {
+        'title' : "Child Daily Report",
+    }
+    return render(request, 'childDailyReport.html', context)
+
